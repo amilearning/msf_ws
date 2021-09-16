@@ -6,7 +6,8 @@
 		<remap from="/msf_core/odometry" to="/mavros/odometry/out" />		
 		
 		<remap from="/msf_core/imu_state_input" to="/mavros/imu/data"  />
-		<remap from="msf_updates/transform_input" to="/vins/posetransform" />
+		<!-- <remap from="msf_updates/transform_input" to="/vins/posetransform" /> -->
+		<remap from="msf_updates/transform_input" to="ndt_fused_pose" /> 
 
 
 		<rosparam file="$(find msf_updates)/viconpos_sensor_fix.yaml"/>
