@@ -76,7 +76,7 @@ struct PoseMeasurement : public PoseMeasurementBase {
       const double s_zp = n_zp_ * n_zp_;
       const double s_zq = n_zq_ * n_zq_;
       R_ =
-          (Eigen::Matrix<double, nMeasurements, 1>() << s_zp, s_zp, s_zp, s_zq, s_zq, s_zq, 1e-6)
+          (Eigen::Matrix<double, nMeasurements, 1>() << s_zp, s_zp, s_zp*10.0, s_zq, s_zq, s_zq, 1e-6)
               .finished().asDiagonal();
     } else {  // Take covariance from sensor.
       R_.block<6, 6>(0, 0) = Eigen::Matrix<double, 6, 6>(

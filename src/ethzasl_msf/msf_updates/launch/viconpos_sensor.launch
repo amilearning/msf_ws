@@ -1,11 +1,12 @@
 <launch>
-    <node name="msf_viconpos_sensor" pkg="msf_updates" type="pose_sensor" clear_params="true" output="screen">
+    <node name="msf_viconpos_sensor" pkg="msf_updates" type="pose_sensor" clear_params="true" output="log">
 
 		<remap from="msf_core/hl_state_input" to="/fcu/ekf_state_out" />
 		<remap from="msf_core/correction" to="/fcu/ekf_state_in" />		
 		<remap from="/msf_core/odometry" to="/mavros/odometry/out" />		
 		
 		<remap from="/msf_core/imu_state_input" to="/mavros/imu/data"  />
+		<!-- <remap from="/msf_core/imu_state_input" to="/camera/imu"  /> -->
 		<!-- <remap from="msf_updates/transform_input" to="/vins/posetransform" /> -->
 		<remap from="msf_updates/transform_input" to="ndt_fused_pose" /> 
 

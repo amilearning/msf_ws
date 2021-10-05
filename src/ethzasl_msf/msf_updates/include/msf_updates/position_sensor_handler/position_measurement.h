@@ -57,7 +57,7 @@ struct PositionMeasurement : public PositionMeasurementBase {
     {
 
       const double s_zp = n_zp_ * n_zp_;
-      R_ = (Eigen::Matrix<double, nMeasurements, 1>() << s_zp, s_zp, s_zp)
+      R_ = (Eigen::Matrix<double, nMeasurements, 1>() << s_zp, s_zp, s_zp*10.0)
           .finished().asDiagonal();
 
     } else {  // Tke covariance from sensor.

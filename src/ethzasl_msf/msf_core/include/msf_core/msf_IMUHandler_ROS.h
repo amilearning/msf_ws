@@ -99,6 +99,20 @@ class IMUHandler_ROS : public IMUHandler<EKFState_T> {
     }
     lastseq = msg->header.seq;
 
+  //       dx = imu_msg->linear_acceleration.z;
+  //       dy = -imu_msg->linear_acceleration.x;
+  //       dz = -imu_msg->linear_acceleration.y;
+  //       rx = imu_msg->angular_velocity.z;
+  //       ry = -imu_msg->angular_velocity.x;
+  //       rz = -imu_msg->angular_velocity.y;
+
+//  msf_core::Vector3 linacc;
+//     linacc << msg->linear_acceleration.z, -1*msg->linear_acceleration.x,-1*msg
+//         ->linear_acceleration.y;
+
+//     msf_core::Vector3 angvel;
+//     angvel << msg->angular_velocity.z, -1*msg->angular_velocity.x, -1*msg
+//         ->angular_velocity.y;
     msf_core::Vector3 linacc;
     linacc << msg->linear_acceleration.x, msg->linear_acceleration.y, msg
         ->linear_acceleration.z;

@@ -7,16 +7,11 @@
 # /msf_viconpos_sensor/core/core_noise_accbias: 0.000561686614854
 # /msf_viconpos_sensor/core/core_noise_gyr: 0.0145950651918 
 # /msf_viconpos_sensor/core/core_noise_gyrbias: 1.45347322073e-05
+/msf_viconpos_sensor/core/core_noise_acc: 0.035
+/msf_viconpos_sensor/core/core_noise_accbias: 0.0000005
+/msf_viconpos_sensor/core/core_noise_gyr: 0.0004
+/msf_viconpos_sensor/core/core_noise_gyrbias: 0.000003
 
-# /msf_viconpos_sensor/core/core_noise_acc: 0.045
-# /msf_viconpos_sensor/core/core_noise_accbias: 0.0000005
-# /msf_viconpos_sensor/core/core_noise_gyr: 0.0004
-# /msf_viconpos_sensor/core/core_noise_gyrbias: 0.000003
-
-/msf_viconpos_sensor/core/core_noise_acc: 0.5
-/msf_viconpos_sensor/core/core_noise_accbias: 0.000414662419865
-/msf_viconpos_sensor/core/core_noise_gyr: 0.00099255496418
-/msf_viconpos_sensor/core/core_noise_gyrbias: 1.63993994383e-05
 
 /msf_viconpos_sensor/pose_sensor/fixed_scale: 1
 /msf_viconpos_sensor/pose_sensor/pose_noise_scale: 0.0
@@ -24,16 +19,16 @@
 /msf_viconpos_sensor/pose_sensor/pose_noise_q_wv: 0.0
 /msf_viconpos_sensor/pose_sensor/pose_noise_q_ic: 0.0
 /msf_viconpos_sensor/pose_sensor/pose_noise_p_ic: 0.0
-/msf_viconpos_sensor/pose_sensor/pose_delay: 0.02
-/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.01
+/msf_viconpos_sensor/pose_sensor/pose_delay: 0.025
+/msf_viconpos_sensor/pose_sensor/pose_noise_meas_p: 0.03
 /msf_viconpos_sensor/pose_sensor/pose_noise_meas_q: 0.00001
 
 /msf_viconpos_sensor/pose_sensor/init/q_ic/w: 1.0
 /msf_viconpos_sensor/pose_sensor/init/q_ic/x: 0.0
 /msf_viconpos_sensor/pose_sensor/init/q_ic/y: 0.0
 /msf_viconpos_sensor/pose_sensor/init/q_ic/z: 0.0
-/msf_viconpos_sensor/pose_sensor/init/p_ic/x: 0.0 
-/msf_viconpos_sensor/pose_sensor/init/p_ic/y: 0.0   
+/msf_viconpos_sensor/pose_sensor/init/p_ic/x: 0.0   
+/msf_viconpos_sensor/pose_sensor/init/p_ic/y: 0.0
 /msf_viconpos_sensor/pose_sensor/init/p_ic/z: 0.0
 
 /msf_viconpos_sensor/pose_sensor/pose_fixed_scale: true
